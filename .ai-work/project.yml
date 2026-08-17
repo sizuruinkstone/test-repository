@@ -1,0 +1,80 @@
+{
+    "version":  1,
+    "security":  {
+                     "uncontainedAgentAndVerificationEgressAccepted":  true
+                 },
+    "project":  {
+                    "alias":  "rc-test",
+                    "idPrefix":  "RCT",
+                    "defaultBaseBranch":  "main",
+                    "remote":  "origin"
+                },
+    "checks":  {
+                   "test":  [
+                                "npm",
+                                "test"
+                            ]
+               },
+    "paths":  {
+                  "protected":  [
+
+                                ],
+                  "denied":  [
+
+                             ],
+                  "securityPaths":  {
+                                        "none":  {
+                                                     "confirmed":  true,
+                                                     "confirmationDigest":  "7c8ccacf969136315435bdad1a800028a498850c88cd68fb6080da4304966cb7",
+                                                     "confirmationVersion":  "aster-v0.1.1-security-path-none-v1"
+                                                 }
+                                    },
+                  "publicApiPaths":  {
+                                         "none":  {
+                                                      "confirmed":  true,
+                                                      "confirmationDigest":  "5fd2224838e3c3fa2aba44f1ab163b4d6f2efef0ffa74546535210e858a107c5",
+                                                      "confirmationVersion":  "aster-v0.1.1-security-path-none-v1"
+                                                  }
+                                     },
+                  "persistentModelPaths":  {
+                                               "none":  {
+                                                            "confirmed":  true,
+                                                            "confirmationDigest":  "9c6be0d14bbe090a569e0bd30549a2e2f8f870756e88cab18b5d90ed67e0d0ff",
+                                                            "confirmationVersion":  "aster-v0.1.1-security-path-none-v1"
+                                                        }
+                                           }
+              },
+    "review":  {
+                   "forceL2":  {
+                                   "pathPatterns":  [
+
+                                                    ],
+                                   "conditions":  [
+
+                                                  ]
+                               }
+               },
+    "github":  {
+                   "authorizedReviewers":  [
+                                               {
+                                                   "login":  "sizuruinkstone",
+                                                   "userId":  293336730
+                                               }
+                                           ],
+                   "autoRespond":  false,
+                   "cleanupRemoteBranch":  false
+               },
+    "pathReservation":  {
+                            "mode":  "TIERED",
+                            "hardPatterns":  [
+
+                                             ]
+                        },
+    "visual":  {
+                   "devServerPortRange":  [
+                                              43000,
+                                              43010
+                                          ],
+                   "commitScreenshots":  "none"
+               }
+}
